@@ -17,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name1 = $_POST['name1'];
     $name2 = $_POST['name2'];
 
-    $name1 = mb_strtolower($name1);
-    $name2 = mb_strtolower($name2);
+    mb_strtolower($name1);
+    mb_strtolower($name2);
 
     $valid = is_string($name1);
 
