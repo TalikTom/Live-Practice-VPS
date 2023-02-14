@@ -7,5 +7,6 @@ return
         '/oib-generator' => 'controllers/oib.php',
         '/love-calculator' => 'controllers/love.php',
         '/login' => 'controllers/login.php',
-        '/authorization' => 'controllers/authorization.php'
+        '/authorization' => 'controllers/authorization.php',
+        '/protected' => 'controllers/protected.php'
     ];
