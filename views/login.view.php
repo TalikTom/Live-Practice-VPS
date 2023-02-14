@@ -2,7 +2,7 @@
 <?php include 'partials/nav.php'; ?>
 
     <main class="center-grid margin-top">
-        <form action="authorization.php" method="post">
+        <form action="/authorization" method="post">
             <label for="email">Email</label>
             <input type="text" name="email"
                    value="<?= $email ?>"

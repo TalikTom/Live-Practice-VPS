@@ -6,5 +6,6 @@ return
         '/chart' => 'controllers/chart.php',
         '/oib-generator' => 'controllers/oib.php',
         '/love-calculator' => 'controllers/love.php',
-        '/login' => 'controllers/login.php'
+        '/login' => 'controllers/login.php',
+        '/authorization' => 'controllers/authorization.php'
     ];
