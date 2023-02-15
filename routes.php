@@ -8,5 +8,6 @@ return
         '/love-calculator' => 'controllers/love.php',
         '/login' => 'controllers/login.php',
         '/authorization' => 'controllers/authorization.php',
-        '/protected' => 'controllers/protected.php'
+        '/protected' => 'controllers/protected.php',
+        '/logout' => 'controllers/logout.php'
     ];
