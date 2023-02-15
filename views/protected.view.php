@@ -13,7 +13,7 @@
         <p>
             <?= $message ?>
         </p>
-        <a href="/logout">Log off</a>
+        <a href="/logout">Logout</a>
         </body>
         </html>
     </main>

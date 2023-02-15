@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 $counter = $_SESSION['counter'] ?? 0;
 $counter = $counter + 1;

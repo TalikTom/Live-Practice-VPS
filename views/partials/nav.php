@@ -5,7 +5,6 @@
         <li><a href="/oib-generator">OIB Generator</a></li>
         <li><a href="/love-calculator">Love Calculator</a></li>
         <li><a href="/chart">Chart</a></li>
-        <li><a href="/login">Login</a></li>
-
+        <li><?= $_SESSION['auth'] ? '<a href="/logout">Logout</a>' : '<a href="/login">Login</a>' ?>
     </ul>
 </nav>
