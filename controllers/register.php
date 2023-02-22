@@ -11,6 +11,20 @@ if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['emai
     $errorMessage = 'Please complete the registration form';
 }
 
+//// The below snippet will make sure the captured input value is an email address.
+//if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+//    $errorMessage = 'Email is not valid!';
+//}
+//// The below snippet will only accept alphabetical and numerical characters.
+//if (preg_match('/^[a-zA-Z0-9]+$/', $_POST['username']) == 0) {
+//    $errorMessage= 'Username is not valid!';
+//}
+//
+//// The below snippet will enforce the password field to be between 5 and 20 characters long.
+//if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
+//    $errorMessage = ('Password must be between 5 and 20 characters long!');
+//}
+
 // We need to check if the account with that username exists.
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
     // Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
@@ -28,7 +42,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
             $stmt->bind_param('sss', $_POST['username'], $password, $_POST['email']);
             $stmt->execute();
-            header('location: /login');
+            echo 'You have successfully registered! You can now login!';
         } else {
             // Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
             echo 'Could not prepare statement!';
