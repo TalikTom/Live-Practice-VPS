@@ -9,5 +9,6 @@ return
         '/login' => 'controllers/login.php',
         '/authorization' => 'controllers/authorization.php',
         '/protected' => 'controllers/protected.php',
-        '/logout' => 'controllers/logout.php'
+        '/logout' => 'controllers/logout.php',
+        '/register' => 'controllers/register.php',
     ];
