@@ -11,6 +11,7 @@
             <input type="password" name="password" id="">
             <input type="submit" value="Login">
         </form>
+        <a href="/register">Register here</a>
     </main>
 
 <?php include 'partials/footer.php'; ?>
