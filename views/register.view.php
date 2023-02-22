@@ -3,7 +3,9 @@
 
     <div class="register">
         <h1>Register</h1>
-        <form action="register.php" method="post" autocomplete="off">
+        <p><?= $errorMessage ?></p>
+
+        <form action="/register" method="post" autocomplete="off">
             <div class="flex">
                 <label for="username">
                     <i class="fas fa-user"></i>
